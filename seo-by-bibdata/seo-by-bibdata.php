@@ -4,7 +4,7 @@ Plugin Name: SEO By BibData
 Plugin URI: https://bibdata.com/index.php/seo-by-bibdata/
 Description: Experience SEO optimization made simple and efficient with SEO by BibData. No complicated settings are required. Let SEO by BibData's algorithms handle the job for you.
 Version: 1.0.0
-Author: Rigoberto Rodriguez
+Author: Rigo
 Author URI: https://www.bibdata.com
 Text Domain: SEO by BibData
 Requires at Least: 4.0
