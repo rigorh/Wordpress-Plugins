@@ -58,7 +58,6 @@ add_action('save_post', 'bibdata_save_seo_meta');
 //Get values
 function bibdata_get_meta_value(){   
     global $post;
-    //$post_id = $post->ID;
     $post_id = $post->ID ?? '0';
       
 
@@ -72,11 +71,7 @@ function bibdata_get_meta_value(){
 add_action('wp_head', 'bibdata_get_meta_value',4);
 
 function bibdata_array_tostring($valor){
-    //$array = array("value1", "value2", "value3", "value4");
-    // Convert the array to a string with values separated by colons
     $string = implode(", ", $valor);
-   
-    // Output the resulting string
     return $string;
 }
 
@@ -103,8 +98,6 @@ function bibdata_get_metacontent(){
 
 function bdta_get_additional_tags($value){
     if ($value==""){
-        //$value="Welcome to SimbyShop - Where Elegance Meets Exceptional Craftsmanship! Gold and sterling silver jewelry.";
-        //$value = esc_html(get_bloginfo('blogname'));
         $value = get_bloginfo('description');
     }
     echo '<meta name="description" content="' . esc_attr($value) . '"/>';  
@@ -216,7 +209,6 @@ function bdta_salva_geo_valores($valor1, $valor2) {
 if (isset($_POST['save_textbox']) && check_admin_referer('_wpnonce', '_wpnonce_my-plugin-nonce')) {
     $textbox_value1 = sanitize_text_field($_POST['region']);
     $textbox_value2 = sanitize_text_field($_POST['placename']);
-    //update_option('geo_region', $textbox_value);
     bdta_salva_geo_valores($textbox_value1,$textbox_value2);
     ?>
         <script>
