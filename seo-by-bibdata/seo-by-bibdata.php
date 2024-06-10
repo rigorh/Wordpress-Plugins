@@ -15,8 +15,6 @@ GitHub Plugin URI: https://github.com/rigorh/Wordpress-Plugins/tree/main
 GitHub Branch: main
 */
 
-//require_once('/var/www/html/bibdata/wp-load.php');
-
 function bibdata_seo_meta_box() {
     add_meta_box(
         'my-seo-meta-box',
