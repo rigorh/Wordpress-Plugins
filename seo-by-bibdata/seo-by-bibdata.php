@@ -11,7 +11,7 @@ Requires at Least: 4.0
 Requires PHP: 7.0
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-GitHub Plugin URI: https://github.com/username/repo
+GitHub Plugin URI: https://github.com/rigorh/Wordpress-Plugins/tree/main
 GitHub Branch: main
 */
 
